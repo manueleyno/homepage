@@ -38,12 +38,12 @@
                       <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stories
                       <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><%= link_to "Alle Stories", about_path %></li>
-                        <li><%= link_to "Neueste Stories", about_path %></li>
-                        <li><%= link_to "Top Stories", about_path %></li>
+                        <li><%= link_to "Alle Stories", impressum_path %></li>
+                        <li><%= link_to "Neueste Stories", impressum_path %></li>
+                        <li><%= link_to "Top Stories", impressum_path %></li>
                       </ul>
                     </li>
-                    <li><%= link_to "Produkte", about_path %></li>
+                    <li><%= link_to "Produkte", impressum_path %></li>
                     <li><%= link_to "Kontakt", new_contact_path %></li>
                   </ul>
                 </div>
@@ -53,16 +53,23 @@
         </div>
       </nav>    
     </nav>
-    
+  <!-- Absatz hier sollte irgendwie weg -->  
     <div class="container">
       <% flash.each do |type, msg| %>
-      <%=content_tag :div, msg, class: "alert alert-#{type}" %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
       <% end %>
     </div>
     
     <div class="grund">
-      <%= yield %> <!Grund für jede seite die ganze datei und yield holt den rest der view files>
+          <div class="container">
+      <% flash.each do |type, msg| %>
+        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+      <% end %>
     </div>
+      <%= yield %> <!-- Grund für jede seite die ganze datei und yield holt den rest der view files> -->
+    </div>
+    
+    
   </body>
   
   <footer>
@@ -78,7 +85,6 @@
  					
  					<div class="impressum_footer">
  					  <%= link_to "Impressum", impressum_path %><br>
- 					  <%= link_to "Erfahre mehr über Topside", about_path %><br>
  					</div>
  					
 					<address>

@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+//= require bootstrap-sprockets
 
   (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
