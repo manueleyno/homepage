@@ -1,0 +1,72 @@
+NEUE DB rails db:drop db:create db:migrate
+
+Devise Registrieren
+
+Benutzer können Artikel posten
+
+-Eingeloggter User postet Artikel 
+    -Überschrift
+    -Upload für Mini Titelbild 
+        Felder:
+        ID, Datum, Link Story, Link zu Titelbild, Ersteller, Seitenaufrufe
+          create_table "articles", force: :cascade do |t|
+            t.string   "title"
+            t.text     "body"
+            t.datetime "created_at", null: false
+            t.datetime "updated_at", null: false
+            t.integer  "user_id"
+        
+-Übersicht der Artikel
+    -Edit, Publizieren, Delete Button
+    -Edit: User bekommt zugang zu Mecury Editor
+        Edit Page:
+        If user admin allow mercury on artikel
+        else If User= User ID artikel allow mercury on artikel
+        else Du kannst nicht editieren
+    -Publizieren: Verlinkt den Aritkel in Datenbank X aus der die Frontpage immer ihre Links zieht
+    -Delete: check
+        If user admin nachfragen really delete?
+        else If User= User ID artikel nachfragen really delete?
+        else Du kannst nicht deleten
+        
+ User und Admin können Artikel editieren
+
+Cancancan
+- 3 Verschiedene Rechte: Admin, Schreibrechte, Keine Rechte
+
+Sichere Seite
+
+Cookie Speicherung Erlaubnis
+
+Profile
+- User Braucht: Vorname, Name, Bild, Youtube Link, Facebook, Instagramm, Twitter 
+
+Suchfunktion
+
+
+
+View hauptseite
+if login 
+    show: new articel
+    show: edit articel
+else 
+    show login button
+    
+View Articel_new
+    if admin=true; newsposter=true
+        show
+    else 
+    leider keine Schreibrechte
+
+bei destroy genau so
+    
+View Artikel_edit
+    if admin=true
+        show all articel
+    
+    else newsposter=true
+        show only his articel
+    
+    else
+        "sie besitzen derzeit keine schreibrechte
+        
