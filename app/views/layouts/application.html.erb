@@ -53,6 +53,8 @@
         </div>
       </nav>    
     </nav>
+    
+    <div class="main-background">
   <!-- Absatz hier sollte irgendwie weg -->  
     <div class="container">
       <% flash.each do |type, msg| %>
@@ -67,6 +69,8 @@
       <% end %>
     </div>
       <%= yield %> <!-- Grund für jede seite die ganze datei und yield holt den rest der view files> -->
+    </div>
+    
     </div>
     
     

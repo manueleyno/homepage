@@ -1,13 +1,14 @@
+.home-grid{
+    margin-top: 40px;
+}
+
 .pic-home-grid {
     position: relative;
     size: relative;
     margin-bottom: 15px;
     height: 200px;
     width: 100%;
-}
-
-.home-inner-grid {
-    margin: -10px;
+    border-radius: 10px;
 }
 
 .home-grid-link {
@@ -15,11 +16,28 @@
     margin-top: 20px;
     font-weight: 700;
     border: none;
-    color: #3d4472;
+    color: white;
     &:hover {
-        color: 6f5868;
+        color: #c2cbb3;
         opacity: 0.75;
         text-decoration: none;
     }
 }
 
+.mid-matrix {
+    position: relative;
+    size: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+
+.heading-matrix {
+    margin-bottom: -45px;
+}
+
+.well {
+    background-color: #45a247 !important;
+    border-radius: 10px !important;
+}

@@ -27,8 +27,6 @@ gem 'hirb', '0.7.3'
 gem 'devise', '4.2.0'
 # Use Cancancan for User authorization
 gem 'cancancan', '~> 1.10'
-# Use Mercury for Editing and HTML BLABLA
-gem 'mercury-rails', :git => 'git://github.com/jejacks0n/mercury.git'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '3.0'
 # Use ActiveModel has_secure_password

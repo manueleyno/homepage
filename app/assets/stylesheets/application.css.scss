@@ -27,8 +27,8 @@ h1, h2, h3 {
 //Background Gradient
 .navbar, .home-callout {
     background: #F3904F; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #F3904F , #3B4371); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #F3904F , #3B4371); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to left, #45a247 , #283c86); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #45a247 , #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 //Nav Styles
@@ -95,12 +95,20 @@ h1, h2, h3 {
 }
     
 //Homepage Styles
+
+.main-background {
+    background-color: white;
+}
+
 .home-callout {
     color: white;
     padding-top: 50px;
     padding-bottom: 100px;
 }
 
+.mid-matrix {
+    background-color: #f0e6ff;
+}
 
 .flash-container {
   position: absolute;
@@ -115,9 +123,6 @@ h1, h2, h3 {
   margin-top: -14px;
 }
 
-.home-grid{
-    margin-top: 50px;
-}
 
 //Inhalt
 
@@ -130,6 +135,7 @@ h1, h2, h3 {
 
 footer {
     background-color:  #f0e6ff;
+    margin-top: 40px;
 }
 
 .footer_all {
@@ -157,6 +163,10 @@ footer {
 /* ----------------------------------------------------------------
 	Columns & Grids
 -----------------------------------------------------------------*/
+
+.inner-maxtrix-single {
+    border-radius: 30px !important;
+}
 
 
 .postcontent { width: 860px; }
