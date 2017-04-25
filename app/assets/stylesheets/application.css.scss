@@ -165,66 +165,17 @@ footer {
 -----------------------------------------------------------------*/
 
 .inner-maxtrix-single {
-    border-radius: 30px !important;
+    border-radius: 20px !important;
 }
 
-
-.postcontent { width: 860px; }
-.postcontent.bothsidebar { width: 580px; }
-.sidebar { width: 240px; }
-.col_full { width: 100%; }
-.col_half { width: 48%; }
-.col_one_third { width: 30.63%; }
-.col_two_third { width: 65.33%; }
-.col_one_fourth { width: 22%; }
-.col_three_fourth { width: 74%; }
-.col_one_fifth { width: 16.8%; }
-.col_two_fifth { width: 37.6%; }
-.col_three_fifth { width: 58.4%; }
-.col_four_fifth { width: 79.2%; }
-.col_one_sixth { width: 13.33%; }
-.col_five_sixth { width: 82.67%; }
-body.stretched .container-fullwidth {
-	position: relative;
-	padding: 0 60px;
-	width: 100%;
+.main-boxes {
+    min-height: 20px;
+    padding: 19px;
+    margin-bottom: 20px;
+    background-color: #f0e6ff;
+    border: 1px solid #e3e3e3;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    margin-top: 30px;
 }
-
-.postcontent,
-.sidebar,
-.col_full,
-.col_half,
-.col_one_third,
-.col_two_third,
-.col_three_fourth,
-.col_one_fourth,
-.col_one_fifth,
-.col_two_fifth,
-.col_three_fifth,
-.col_four_fifth,
-.col_one_sixth,
-.col_five_sixth {
-	display: block;
-	position: relative;
-	margin-right: 4%;
-	margin-bottom: 50px;
-	float: left;
-}
-
-.postcontent,
-.sidebar { margin-right: 40px; }
-
-.col_full {
-	clear: both;
-	float: none;
-	margin-right: 0;
-}
-
-.postcontent.col_last,
-.sidebar.col_last { float: right; }
-
-.col_last {
-	margin-right: 0 !important;
-	clear: right;
-}
-

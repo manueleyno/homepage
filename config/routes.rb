@@ -5,4 +5,7 @@ Rails.application.routes.draw do
   resources :contacts, only: :create
   get 'Kontakt_Formular', to: 'contacts#new', as: 'new_contact'
   resources :articles
+  get 'produkte', to: 'products#produkte'
+  get 'sicherungsbrille', to: 'products#sicherungsbrille'
+  get 'brillen_etui', to: 'products#brillen_etui'
 end

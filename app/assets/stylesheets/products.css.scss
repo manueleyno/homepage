@@ -1,0 +1,23 @@
+.pic-products-main {
+    position: relative;
+    size: relative;
+    margin-bottom: 15px;
+    width: 97%;
+    border-radius: 20px;
+    margin-left: 0px;
+    margin-top: 25px;
+}
+
+.product-link {
+    font-size: 200%;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    border: none;
+    color: #23527c;
+    &:hover {
+        color: #45a147;
+        opacity: 0.75;
+        text-decoration: none;
+    }
+}

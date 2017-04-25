@@ -43,7 +43,7 @@
                         <li><%= link_to "Top Stories", impressum_path %></li>
                       </ul>
                     </li>
-                    <li><%= link_to "Produkte", impressum_path %></li>
+                    <li><%= link_to "Produkte", produkte_path %><br></li>
                     <li><%= link_to "Kontakt", new_contact_path %></li>
                   </ul>
                 </div>
@@ -63,7 +63,7 @@
     </div>
     
     <div class="grund">
-          <div class="container">
+      <div class="container">
       <% flash.each do |type, msg| %>
         <%= content_tag :div, msg, class: "alert alert-#{type}" %>
       <% end %>
