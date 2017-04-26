@@ -27,6 +27,8 @@ gem 'hirb', '0.7.3'
 gem 'devise', '4.2.0'
 # Use Cancancan for User authorization
 gem 'cancancan', '~> 1.10'
+# EU Cookies Erklärung
+gem 'cookies_eu'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '3.0'
 # Use ActiveModel has_secure_password
