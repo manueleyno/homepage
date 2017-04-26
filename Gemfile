@@ -29,6 +29,8 @@ gem 'devise', '4.2.0'
 gem 'cancancan', '~> 1.10'
 # EU Cookies Erklärung
 gem 'cookies_eu'
+# Userfreundliche URLS
+gem 'friendly_id', '~> 5.1.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '3.0'
 # Use ActiveModel has_secure_password
