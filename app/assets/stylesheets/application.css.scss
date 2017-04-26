@@ -161,7 +161,7 @@ footer {
 
 
 /* ----------------------------------------------------------------
-	Columns & Grids
+	Mittlere Elemente
 -----------------------------------------------------------------*/
 
 .inner-maxtrix-single {
@@ -178,4 +178,26 @@ footer {
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     margin-top: 30px;
+}
+
+.well {
+    background-color: rgba(55, 113, 101, 0.73) !important;
+}
+
+
+/* ------
+Mitte Matrix
+-----*/
+
+.mid-matrix {
+    position: relative;
+    size: relative;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 5px;
+    border-radius: 20px;
+}
+
+.heading-matrix {
+    margin-bottom: -45px;
 }
