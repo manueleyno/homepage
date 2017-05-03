@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Topside</title>
+    <title><%= yield(:page_title) %> Topside</title>
     <%= csrf_meta_tags %>
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -10,68 +10,18 @@
   </head>
 
   <body>
-    <nav class="header">
-      <nav class="navbar navbar-default navbar-static-top" role="navigation">
-        <div class='container'>
-          <div class="col-md-6">
-            <div class="nav navbar-nav navbar-left">
-              <div class="logo">
-                <%= link_to root_path do %>
-                  <%=image_tag("logo/logo_inverted.gif", size: "200x51", alt: "Example Image", class: "logo2")%>
-                <% end %>
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-                  <span class="sr-only">Toggle navigation</span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                  <span class="icon-bar"></span>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="text-center">
-              <div class="navbar-header">
-                <div class="collapse navbar-collapse" id="main-nav-collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                    <li><%= link_to "Home", root_path %></li>
-                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#">Stories
-                      <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li><%= link_to "Alle Stories", impressum_path %></li>
-                        <li><%= link_to "Neueste Stories", impressum_path %></li>
-                        <li><%= link_to "Top Stories", impressum_path %></li>
-                      </ul>
-                    </li>
-                    <li><%= link_to "Produkte", produkte_path %><br></li>
-                    <li><%= link_to "Kontakt", new_contact_path %></li>
-                  </ul>
-                </div>
-              </div>
-            </div><!-- /.navbar-collapse -->
-          </div>
-        </div>
-      </nav>    
-    </nav>
+    <%= render 'layouts/navbar' %>
     
     <div class="main-background">
-  <!-- Absatz hier sollte irgendwie weg -->  
-    <div class="container">
-      <% flash.each do |type, msg| %>
-        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-      <% end %>
-    </div>
-    
-    <div class="grund">
       <div class="container">
-      <% flash.each do |type, msg| %>
-        <%= content_tag :div, msg, class: "alert alert-#{type}" %>
-      <% end %>
-    </div>
-      <%= yield %> <!-- Grund für jede seite die ganze datei und yield holt den rest der view files> -->
-    </div>
-    
+        <% flash.each do |type, msg| %>
+          <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+        <% end %>
+      </div>
+      
+      <div class="grund <%= controller_name %> <%= action_name %>">
+				<%= yield %> <!-- Grund für jede seite die ganze datei und yield holt den rest der view files> -->
+      </div>
     </div>
     
     
@@ -146,7 +96,7 @@
 								</div>
 								
 								<div class="btn btn-default navbar-btn standard-link">
-						      <%= link_to 'Admin Bereich', class: "btn btn-default navbar-btn", controller: 'articles' %>
+						      <%= link_to 'Admin Bereich', stories_path %>
 						    </div>
 
 							</div>

@@ -70,6 +70,8 @@ GEM
     ffi (1.9.18)
     font-awesome-sass (4.6.2)
       sass (>= 3.2)
+    friendly_id (5.1.0)
+      activerecord (>= 4.0.0)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
     hirb (0.7.3)
@@ -186,6 +188,7 @@ DEPENDENCIES
   cookies_eu
   devise (= 4.2.0)
   font-awesome-sass (= 4.6.2)
+  friendly_id (~> 5.1.0)
   hirb (= 0.7.3)
   jbuilder (= 2.5.0)
   jquery-rails (= 4.1.1)
