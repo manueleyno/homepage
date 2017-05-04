@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:page_title) %> Topside</title>
+    <%= csrf_meta_tags %>
+    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'cookies_eu/consent_banner' %>
+  </head>
+
+  <body>
+    
+    <%= render 'layouts/navbar' %>
+    
+    <div class="main-background">
+      <div class="container">
+        <% flash.each do |type, msg| %>
+          <%= content_tag :div, msg, class: "alert alert-#{type}" %>
+        <% end %>
+      </div>
+      
+      <div class="grund <%= controller_name %> <%= action_name %>">
+        <div class="container">
+				  <%= yield %> <!-- Grund für jede seite die ganze datei und yield holt den rest der view files> -->
+				</div>
+      </div>
+    </div>
+    
+    
+  </body>
+  
+  <%= render 'layouts/footer' %>
+
+</html>
