@@ -5,7 +5,7 @@ module Blog
     # GET /posts
     # GET /posts.json
     def index
-      @posts = Post.most_recent
+      @posts = Post.most_recent.published.paginate(:page => params[:page], :per_page => 9)
     end
   
     # GET /posts/1

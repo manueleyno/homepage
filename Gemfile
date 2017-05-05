@@ -21,6 +21,8 @@ gem 'jbuilder', '2.5.0'
 gem 'bootstrap-sass', '3.3.7'
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
+# helps show attributes of Database
+gem 'annotate'
 # Use Hirb gem for better console data presentation
 gem 'hirb', '0.7.3'
 # Use Devise for user authentication
@@ -31,15 +33,24 @@ gem 'cancancan', '~> 1.10'
 gem 'cookies_eu'
 # Userfreundliche URLS
 gem 'friendly_id', '~> 5.1.0'
+# will_paginate is a pagination library that integrates with Ruby on Rails, Sinatra, Merb, DataMapper and Sequel.
+gem 'will_paginate', '~> 3.1.0'
+# Tags
+gem 'acts-as-taggable-on', '~> 4.0'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '3.1.7'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+# # Use PostgreSQL wegen Konsolenfehler und Heroku
+# gem 'pg', '0.18.4'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
 end
@@ -51,10 +62,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '2.0.0'
 end
-group :production do
+# group :production do
   # Use the PostgreSQL gem for Heroku production servers
   gem 'pg', '0.18.4'
-end
+# end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 ruby '2.3.0'

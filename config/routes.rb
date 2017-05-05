@@ -1,9 +1,14 @@
 Rails.application.routes.draw do
 
+  devise_for :authors
+  
   root to: 'blog/pages#home'
   
-  namespace :author do
-    resources :posts
+  namespace :authors do
+    resources :posts do
+     put 'publish' => 'posts#publish', on: :member
+     put 'unpublish' => 'posts#unpublish', on: :member
+    end
   end  
   
   scope module: 'blog' do
@@ -22,8 +27,6 @@ Rails.application.routes.draw do
     get 'posts/:id' => 'posts#show', as: :post
     
   end
-  
-  devise_for :users
   
 
 end

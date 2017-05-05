@@ -24,3 +24,13 @@
   js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.8";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));//= require cookies_eu
+
+document.addEventListener("turbolinks:load", function() {
+  tinymce.remove();
+  tinymce.init({
+    height: '475',
+    selector:'textarea#post_body',
+    plugins: "codesample image media link code",
+    toolbar: "undo redo | styleselect | bold italic link | codesample image media | code"
+  });
+})
