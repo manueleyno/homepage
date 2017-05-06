@@ -66,13 +66,11 @@
 									</div>
 								</div>
 								
-								<div class="btn btn-default navbar-btn standard-link">
-						      <%= link_to 'Admin Bereich', authors_posts_path, class: "nav-link #{yield(:author)}" %>
-						    </div>
-						    
-						    <% if author_signed_in? %>
+					      <% if author_signed_in? %>
 					        <li class="nav-item dropdown author-nav">
 					          <a class="nav-link dropdown-toggle <%= yield(:author) %>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					            <%= image_tag(current_author.gravatar_image_url) %>
+					            <%= current_author.display_name %>
 					          </a>
 					          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 					            <%= link_to 'My posts', authors_posts_path, class: "dropdown-item" %>
@@ -81,6 +79,10 @@
 					          </div>
 					        </li>
 					      <% end %>
+						    
+						    <div class="btn btn-default navbar-btn standard-link">
+						      <%= link_to 'Admin Bereich', authors_posts_path, class: "nav-link #{yield(:author)}" %>
+						    </div>
 						    
 							</div>
 						</div>

@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:page_title) %> Topside</title>
+    <title><%= yield(:page_title) %> | Topside</title>
     <%= csrf_meta_tags %>
-    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,400i,700|Montserrat:300,400,700" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= render 'cookies_eu/consent_banner' %>
   </head>
 
   <body>
-    <%= render 'layouts/navbar' %>
+  <%= render 'layouts/navbar' %>
+  
+    <div class="home-callout text-center">
+      <h1><%= yield(:page_title) %><</h1>
+    </div>
     
     <div class="main-background">
       <div class="container">
@@ -20,13 +24,11 @@
       </div>
       
       <div class="grund <%= controller_name %> <%= action_name %>">
-				<%= yield %> <!-- Grund für jede seite die ganze datei und yield holt den rest der view files> -->
+    		<%= yield %> <!-- Grund für jede seite die ganze datei und yield holt den rest der view files> -->
       </div>
     </div>
     
-    
-  </body>
-  
   <%= render 'layouts/footer' %>
+  </body>
 
 </html>

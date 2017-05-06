@@ -1,12 +1,26 @@
+//Background Gradient
+.home-callout {
+    background: #F3904F; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #45a247 , #283c86); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #45a247 , #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    padding: 70px;
+    padding-top: 50px !important;
+    h1 {
+      margin-top: 50px;
+      text-align: center;
+      color:white;
+    }
+}
+
 body {
   background-color: $light-gray;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h2, h3, h4, h5, h6, p {
   color: $primary-text-color;
 }
 
-h1, .card-title {
+.card-title {
   font-weight: bold;
 }
 
@@ -16,10 +30,23 @@ h6 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 p, p span {
   font-family: 'Merriweather', serif !important;
   font-size: 20px;
+}
+
+.grund {
+    margin-top: 70px;
+    margin-bottom: 100px;
+}
+
+//devise greift darauf zurück
+.alert-notice, .alert-alert {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.3);
+  border-color: rgba(255, 255, 255, 0.5);
+  margin-top: -14px;
 }

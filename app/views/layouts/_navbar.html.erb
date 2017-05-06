@@ -1,44 +1,56 @@
-<nav class="header">
-  <nav class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class='container'>
-      <div class="col-md-6">
-        <div class="nav navbar-nav navbar-left">
-          <div class="logo">
-            <%= link_to root_path do %>
-              <%=image_tag("logo/logo_inverted.gif", size: "200x51", class: "logo2")%>
-            <% end %>
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="text-center">
-          <div class="navbar-header">
-            <div class="collapse navbar-collapse" id="main-nav-collapse">
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <%= link_to "Home", root_path, class: "nav-link #{yield(:home_active)}" %>
-                </li>
-                <li>
-                  <%= link_to 'Stories', stories_path, class: "nav-link #{yield(:stories_active)}" %>
-                </li>
-                <li>
-                  <%= link_to "Produkte", produkte_path, class: "nav-link #{yield(:produkte_active)}" %>
-                </li>
-                <li>
-                  <%= link_to "Kontakt", new_contact_path, class: "nav-link #{yield(:kontakt_active)}" %>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div><!-- /.navbar-collapse -->
-      </div>
+<div class="collapse" id="exCollapsingNavbar">
+  <div class="collapse-bg p-a-1">
+    <div class='card'>
+      
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <%= link_to "Home", root_path, class: "nav-link #{yield(:home_active)}" %>
+        </li>
+        <li class="list-group-item">
+          <%= link_to 'Stories', stories_path, class: "nav-link #{yield(:stories_active)}" %>
+        </li>
+        <li class="list-group-item">
+          <%= link_to "Produkte", produkte_path, class: "nav-link #{yield(:produkte_active)}" %>
+        </li>
+        <li class="list-group-item">
+          <%= link_to "Kontakt", new_contact_path, class: "nav-link #{yield(:kontakt_active)}" %>
+        </li>
+      </ul>
+      
     </div>
-  </nav>
+  </div>
+</div>
+
+<nav class="navbar navbar-light bg-faded">
+  <div class='container'>
+    
+    <div class="logo">
+      <%= link_to root_path do %>
+        <%=image_tag("logo/logo_inverted.gif", size: "200x51", class: "logo2")%>
+      <% end %>
+    </div>
+    
+    <button class="navbar-toggler hidden-sm-up pull-xs-right" type="button" data-toggle="collapse" data-target="#exCollapsingNavbar">
+      &#9776;
+    </button>
+    
+    <ul class="nav navbar-nav pull-sm-right hidden-xs-down">
+      <li class="nav-item">
+        <%= link_to "Home", root_path, class: "nav-link #{yield(:home_active)}" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to 'Stories', stories_path, class: "nav-link #{yield(:stories_active)}" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Produkte", produkte_path, class: "nav-link #{yield(:produkte_active)}" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Kontakt", new_contact_path, class: "nav-link #{yield(:kontakt_active)}" %>
+      </li>
+    </ul>
+    
+  </div>
 </nav>
+
+
+
