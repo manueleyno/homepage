@@ -6,10 +6,8 @@
     <link href="//fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <script src="https://cloud.tinymce.com/stable/tinymce.min.js"></script>
-    <!--Start Cookie Script-->
-    <script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/6e55cf9f38bc2c0e56ee11739abf415f.js"></script>
-    <!--End Cookie Script-->
+    <script src="https://cloud.tinymce.com/stable/tinymce.min.js?apiKey=8j0nor1czlyiasxh019j4kc0wnhlshn8x59ckolhx1esxoix"></script>
+    <%= render 'cookies_eu/consent_banner', link: cookies_path, target: '_blank' %>
   </head>
 
   <body>
@@ -40,10 +38,6 @@
     </div>
     
     <%= render 'layouts/footer' %>
-    
-    <!--Start Cookie Script-->
-    <script type="text/javascript" charset="UTF-8" src="http://chs03.cookie-script.com/s/6e55cf9f38bc2c0e56ee11739abf415f.js"></script>
-    <!--End Cookie Script-->
     
   </body>
   

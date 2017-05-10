@@ -17,6 +17,7 @@ Rails.application.routes.draw do
   scope module: 'blog' do
     
     get 'impressum', to: 'pages#impressum'
+    get 'cookies', to: 'pages#cookies'
     
     resources :contacts, only: :create
     get 'Kontakt_Formular', to: 'contacts#new', as: 'new_contact'

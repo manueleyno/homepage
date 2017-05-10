@@ -26,6 +26,8 @@ gem 'font-awesome-sass', '4.6.2'
 gem 'annotate'
 # Use Hirb gem for better console data presentation
 gem 'hirb', '0.7.3'
+#cookies accept
+gem 'cookies_eu', '1.6.2'
 # Use Devise for user authentication
 gem 'devise', '4.2.0'
 # Use Cancancan for User authorization

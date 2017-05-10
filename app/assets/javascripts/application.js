@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
+//= require cookies_eu
 
   (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -29,7 +30,7 @@ document.addEventListener("turbolinks:load", function() {
   tinymce.init({
     height: '475',
     selector:'textarea#post_body',
-    plugins: "codesample image media link code",
-    toolbar: "undo redo | styleselect | bold italic link | codesample image media | code"
+    plugins: "autosave codesample image media link code textcolor preview table",
+    toolbar: "undo redo | styleselect | forecolor backcolor | bold italic link | codesample image media | code | restoredraft | preview | table"
   });
 })
