@@ -1,0 +1,92 @@
+<% provide(:page_title, 'enjoy your sports') %>
+<% provide(:home_active, 'active') %>
+
+<div class="main-boxes"> <!-- wenn medium only 3 einstellen verweist auf _@post.html.erb -->
+  <h2><%= link_to 'Die neusten Stories', stories_path, class: "big-link" %></h2>
+    <div class="row">
+      <%= render @posts.first(4) %>
+    </div>
+</div>
+
+<div class="main-boxes">
+  <div class="container">
+    
+    <div class="col-md-6">
+      <div class="header-fb">
+        <h5>Topside auf Facebook</h5>
+      </div>
+      <div class="fb-page" data-href="https://www.facebook.com/Topside-2082532521973737/" 
+      data-tabs="timeline" data-width="420" data-height="480" data-small-header="true" 
+      data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+        <blockquote cite="https://www.facebook.com/Topside-2082532521973737/" class="fb-xfbml-parse-ignore">
+          <a href="https://www.facebook.com/Topside-2082532521973737/">Topside</a>
+        </blockquote>
+     </div>
+    </div>
+    
+    <div class="col-md-6">
+      <div class="header-fb">
+        <h5>Topside auf Instagramm</h5>
+      </div>
+      4 Instagrammbilder die mit größe ändern kleiner werden
+    </div>
+    
+  </div>
+</div>
+
+
+<!-- altes -->
+
+<div class="container home-grid">
+  <div class="mid-matrix">
+    <div class="heading-matrix"> 
+      <div class="text-center">
+        <h2>Topside Top 4</h2>
+      </div>
+    </div>
+    <div class="matrix-inner-stories"></div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="well inner-maxtrix-single">
+            <nav class="text-center home-inner-grid">
+            <%= link_to root_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
+              <%=image_tag("stories/1.jpg", alt: "Example Image", class: "pic-home-grid")%>
+            <% end %>
+            <%= link_to "Wie geht es nur weiter", impressum_path, class: "home-grid-link" %>
+            </nav>      
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well inner-maxtrix-single">
+            <nav class="text-center home-inner-grid">
+            <%= link_to root_path do %> 
+              <%=image_tag("stories/2.jpg", alt: "Example Image", class: "pic-home-grid")%>
+            <% end %>
+            <%= link_to "Das Jubiläum", impressum_path, class: "home-grid-link" %>
+            </nav>      
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well inner-maxtrix-single">
+            <nav class="text-center home-inner-grid">
+            <%= link_to root_path do %>
+              <%=image_tag("stories/3.jpg", alt: "Example Image", class: "pic-home-grid")%>
+            <% end %>
+            <%= link_to "Top 10 Ficker in Deutschland", impressum_path, class: "home-grid-link" %>
+            </nav>      
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="well inner-maxtrix-single">
+            <nav class="text-center home-inner-grid">
+            <%= link_to root_path do %>
+              <%=image_tag("stories/10.jpg", alt: "Example Image", class: "pic-home-grid")%>
+            <% end %>
+            <%= link_to "Top 10 Joggerstrecken in Deutschland und der Welt", impressum_path, class: "home-grid-link" %>
+            </nav>      
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -12,11 +12,21 @@
     }
 }
 
-body {
-  background-color: $light-gray;
+.main-background, .body {
+  background-color: $primary-color-light;
 }
 
-h2, h3, h4, h5, h6, p {
+h4 {
+  a {
+    color: $accent-color !important;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+h2, h3, h5, h6, p {
   color: $primary-text-color;
 }
 
@@ -36,11 +46,6 @@ h1, h2, h3, h4, h5, h6 {
 p, p span {
   font-family: 'Merriweather', serif !important;
   font-size: 20px;
-}
-
-.grund {
-    margin-top: 70px;
-    margin-bottom: 100px;
 }
 
 //devise greift darauf zurück

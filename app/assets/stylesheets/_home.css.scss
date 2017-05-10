@@ -1,8 +1,8 @@
-.welcome {
-    background-image: url("main_top2.jpg");
-	background-repeat: no-repeat;
-	background-height: 100%;
-}
+// .welcome {
+//     background-image: url("main_top2.jpg");
+// 	background-repeat: no-repeat;
+// 	background-height: 100%;
+// }
 
 .home-welcome-text {
     color: #283c86;
@@ -10,6 +10,10 @@
 
 .header-front, .under-header-front, .standard-link {
     color: rgb(9, 33, 0);
+}
+
+.main-boxes {
+    background-color: $primary-color-light;
 }
 
 .standard-link {
@@ -45,18 +49,6 @@
     border-radius: 10px;
 }
 
-.home-grid-link {
-    font-size: 200%;
-    margin-top: 20px;
-    font-weight: 700;
-    border: none;
-    color: white;
-    &:hover {
-        color: #c2cbb3;
-        opacity: 0.75;
-        text-decoration: none;
-    }
-}
 
 .home-grid-link2 {
     font-size: 140%;
@@ -81,14 +73,20 @@
 
 .main-boxes {
     min-height: 20px;
-    padding: 19px;
+    padding: 10px;
     margin-bottom: 20px;
-    background-color: #f0e6ff;
-    border: 1px solid #e3e3e3;
+    background-color: $primary-color-light;
     border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    // -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
+    // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     margin-top: 30px;
+    
+}
+
+.main-boxes-top {
+    margin-bottom: 20px;
+    background-color: $light-gray;
+    margin-top: 5px;
 }
 
 .well {
@@ -114,4 +112,15 @@ Mitte Matrix
 
 .heading-matrix {
     margin-bottom: -45px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.fb-page {
+    position: relative;
+    size: relative;
+    margin-top: 10px;
+    width: 100%;
 }

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
   devise_for :authors
   
-  root to: 'blog/pages#home'
+  root to: 'blog/posts#home'
   
   namespace :authors do
     get '/account' => 'accounts#edit', as: :account

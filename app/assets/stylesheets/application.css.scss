@@ -11,3 +11,71 @@
  @import "navbar";
  @import "footer";
  
+ 
+.card {
+  border: none;
+  border-radius: 0;
+  height: 375px;
+  margin-bottom: 10px;
+  background-color: $light-gray;
+  border: 1px solid $divider-color;
+  border-radius: 5px;
+  .card-topper {
+    height: 200px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+  }
+  .card-block {
+    padding: 10px;
+    .card-title {
+      font-size: 1.3rem;
+      margin-bottom: 0;
+      a {
+        color: black;
+        text-decoration: none;
+      }
+    }
+    .tags {
+      margin-bottom: 0;
+      a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+      }
+    }
+    .published-date {
+      font-size: 0.8rem;
+      color: #787878;
+      font-weight: 300;
+      margin-top: 0.3rem;
+      margin-bottom: 0.3rem;
+    }
+    .card-text {
+      font-size: 0.9rem;
+      color: black;
+    }
+
+  }
+}
+  
+a {
+  text-decoration: none !important;
+  &:hover {
+    opacity: 75% !important;
+  }
+}
+
+h2 {
+    .big-link {
+      text-align: center !important;
+    }
+}
+
+.published-date {
+    // border-top: 1px solid #C5CAE9;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
