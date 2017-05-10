@@ -62,7 +62,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
-    cookies_eu (1.6.1)
+    cookies_eu (1.6.2)
       js_cookie_rails
     devise (4.2.0)
       bcrypt (~> 3.0)
@@ -193,7 +193,7 @@ DEPENDENCIES
   byebug
   cancancan (~> 1.10)
   coffee-rails (= 4.2.1)
-  cookies_eu
+  cookies_eu (~> 1.6.2)
   devise (= 4.2.0)
   font-awesome-sass (= 4.6.2)
   friendly_id (~> 5.1.0)
