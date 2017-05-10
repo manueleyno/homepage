@@ -30,8 +30,6 @@ gem 'hirb', '0.7.3'
 gem 'devise', '4.2.0'
 # Use Cancancan for User authorization
 gem 'cancancan', '~> 1.10'
-# EU Cookies Erklärung
-gem 'cookies_eu', '~> 1.6.2'
 # Userfreundliche URLS
 gem 'friendly_id', '~> 5.1.0'
 # will_paginate is a pagination library that integrates with Ruby on Rails, Sinatra, Merb, DataMapper and Sequel.

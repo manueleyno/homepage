@@ -15,7 +15,6 @@
 //= require turbolinks
 //= require_tree .
 //= require bootstrap-sprockets
-//= require cookies_eu
 
   (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
