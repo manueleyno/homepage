@@ -20,6 +20,11 @@ gem 'jbuilder', '2.5.0'
 # # Use Twitter Bootstrap library for front-end UI and layout
 # gem 'bootstrap-sass', '3.3.7'
 gem 'bootstrap', '4.0.0.alpha3'
+
+source 'https://rails-assets.org' do
+  gem 'rails-assets-tether', '>= 1.3.3'
+end
+
 # Use Font Awesome sass gem for adding icons
 gem 'font-awesome-sass', '4.6.2'
 # helps show attributes of Database
