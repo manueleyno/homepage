@@ -4,17 +4,6 @@
 // 	background-height: 100%;
 // }
 
-.home-welcome-text {
-    color: #283c86;
-}
-
-.header-front, .under-header-front, .standard-link {
-    color: rgb(9, 33, 0);
-}
-
-.main-boxes {
-    background-color: $primary-color-light;
-}
 
 .standard-link {
     font-size: 150%;
@@ -63,13 +52,6 @@
     }
 }
 
-.kurz-Inhalt {
-    margin-top: 15px;
-}
-
-.mid-matrix {
-    background-color: #f0e6ff;
-}
 
 .main-boxes {
     min-height: 20px;
@@ -98,6 +80,56 @@
 }
 
 /* ------
+FB INSTAGRAM PART
+-----*/
+
+.background-main {
+	background-image: url("background_main.jpg");
+    background-repeat: no-repeat;
+    padding: 25px;
+	.container {
+		float: inherit;
+		margin: auto;
+		.fb {
+			float: left;
+		}
+		.mid {
+			margin: auto;
+		}
+		.instagram {
+			float: right;
+		}
+	}
+}
+
+
+
+
+/* ------
+Produkte Part
+-----*/
+
+.prod-main {
+	.white-prod, .blue-prod {
+		padding: 30px;
+		.container {
+			margin-top: 30px;
+		}
+		.pic-main-side {
+			width: 100%;
+			margin: auto;
+		}
+		.block-wide {
+			
+		}
+	}
+	.white-prod {
+		background-color: white;
+	}
+}
+
+
+/* ------
 Mitte Matrix
 -----*/
 
@@ -124,3 +156,4 @@ h2 {
     margin-top: 10px;
     width: 100%;
 }
+
