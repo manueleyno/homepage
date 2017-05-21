@@ -24,35 +24,6 @@
     font-size: 200%;
 }
 
-.home-grid{
-    margin-top: 40px;
-    font-weight: 650;
-}
-
-.pic-home-grid {
-    position: relative;
-    size: relative;
-    margin-bottom: 15px;
-    height: 200px;
-    width: 100%;
-    border-radius: 10px;
-}
-
-
-.home-grid-link2 {
-    font-size: 140%;
-    margin-top: 10px;
-    font-weight: 650;
-    border: none;
-    color: #283c86;
-    &:hover {
-        color: #c2cbb3;
-        opacity: 0.75;
-        text-decoration: none;
-    }
-}
-
-
 .main-boxes {
     min-height: 20px;
     padding: 10px;
@@ -75,9 +46,7 @@
     background-color: rgba(55, 113, 101, 0.73) !important;
 }
 
-.inner-maxtrix-single {
-    border-radius: 20px !important;
-}
+
 
 /* ------
 FB INSTAGRAM PART
@@ -130,7 +99,7 @@ Produkte Part
 
 
 /* ------
-Mitte Matrix
+Untere Matrix
 -----*/
 
 .mid-matrix {
@@ -140,6 +109,7 @@ Mitte Matrix
     padding-left: 15px;
     padding-top: 5px;
     border-radius: 20px;
+    background-color: $light-gray;
 }
 
 .heading-matrix {
@@ -157,3 +127,35 @@ h2 {
     width: 100%;
 }
 
+.inner-maxtrix-single {
+    border-radius: 20px !important;
+}
+
+
+.home-grid{
+    margin-top: 40px;
+    font-weight: 650;
+}
+
+.pic-home-grid {
+    position: relative;
+    size: relative;
+    margin-bottom: 15px;
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+.home-grid-link2 {
+    font-size: 140%;
+    margin-top: 10px;
+    font-weight: 650;
+    border: none;
+    color: #283c86;
+    &:hover {
+        color: #c2cbb3;
+        opacity: 0.75;
+        text-decoration: none;
+    }
+}

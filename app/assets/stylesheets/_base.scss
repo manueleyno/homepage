@@ -12,9 +12,14 @@
     }
 }
 
-.main-background, .body {
-  background-color: $primary-color-light;
+.center-homepage, body {
+      background-color: $primary-color-light;
 }
+
+.center-homepage {
+  padding-bottom: 50px;
+}
+
 
 h4 {
   a {
@@ -54,4 +59,11 @@ p, p span {
   background: rgba(255, 255, 255, 0.3);
   border-color: rgba(255, 255, 255, 0.5);
   margin-top: -14px;
+}
+
+.contact-form {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 4px;
+  background-color: white;
 }
