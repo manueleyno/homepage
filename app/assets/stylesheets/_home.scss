@@ -42,11 +42,6 @@
     margin-top: 5px;
 }
 
-.well {
-    background-color: rgba(55, 113, 101, 0.73) !important;
-}
-
-
 
 /* ------
 FB INSTAGRAM PART
@@ -55,19 +50,36 @@ FB INSTAGRAM PART
 .background-main {
     background-image: image-url("main/background_main.jpg");
     background-repeat: no-repeat;
-    padding: 25px;
 	.container {
 		float: inherit;
 		margin: auto;
-		.fb {
-			float: left;
+		.row {
+		    width: 50%;
 		}
-		.mid {
-			margin: auto;
+		.fb, .instagram {
+            margin: auto;
+		}
+		.fb {
+		    
+		    width: 50%;
+		    margin-top: 10px;
 		}
 		.instagram {
-			float: right;
+		    width: 67%;
 		}
+		.instagram, .instagram-header {
+		    padding-left: 75px;
+		}
+		
+		.instagram-header {
+            margin-bottom: 26px;
+		}
+		
+		h3, h5 {
+		    text-align: center;
+		    color: $accent-color;
+		}
+
 	}
 }
 
@@ -75,21 +87,23 @@ FB INSTAGRAM PART
 
 
 /* ------
-Produkte Part
+Produkte Part   HIER BEI  line-height: 235px; weiter
 -----*/
 
 .prod-main {
 	.white-prod, .blue-prod {
-		padding: 30px;
+		padding: 20px;
 		.container {
 			margin-top: 30px;
+		}
+		.pic-main-field {
+		   
 		}
 		.pic-main-side {
 			width: 100%;
 			margin: auto;
-		}
-		.block-wide {
-			
+			padding: 10px;
+			line-height: 235px;
 		}
 	}
 	.white-prod {
@@ -97,6 +111,9 @@ Produkte Part
 	}
 }
 
+.prod-main-field {
+    		padding: 30px;
+}
 
 /* ------
 Untere Matrix
