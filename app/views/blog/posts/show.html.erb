@@ -1,21 +1,23 @@
-<% provide(:page_title, @post.title) %>
-<% provide(:blog_active, 'active') %>
-
-
-<% provide(:page_title, @post.title) %>
+<% provide(:page_title, 'Story-Time') %>
 <% provide(:blog_active, 'active') %>
 
 <div class="row">
   <div class="col-md-1 col-lg-2"></div>
-  <div class="col-md-10 col-lg-8 text-xs-center">
-    <h1><%= @post.title %></h1>
-    <h6><%= @post.display_day_published %></h6>
-    <%= @post.body.html_safe %>
-
-    <div class="author-bio">
-      <%= image_tag(@post.author.gravatar_image_url) %>
-      <h4><%= @post.author.name %></h4>
-      <h6 class='bio'><%= @post.author.bio %></h6>
+  <div class="container col-md-10 col-lg-8">
+    <div class"post-show">
+      
+      <div class="header-post-show text-xs-center">
+        <h1><%= @post.title %></h1>
+        <h6><%= @post.display_day_published %></h6>
+      </div>
+      <%= @post.body.html_safe %>
+  
+      <div class="author-bio text-xs-center">
+        <%= image_tag(@post.author.gravatar_image_url) %>
+        <h4><%= @post.author.name %></h4>
+        <h6 class='bio'><%= @post.author.bio %></h6>
+      </div>
+      
     </div>
   </div>
 </div>

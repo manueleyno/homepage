@@ -1,15 +1,6 @@
 <% provide(:page_title, 'enjoy your sports') %>
 <% provide(:home_active, 'active') %>
 
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/de_DE/sdk.js#xfbml=1&version=v2.9";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
 <div class="main-boxes"> <!-- wenn medium only 3 einstellen verweist auf _@post.html.erb -->
   <h2><%= link_to 'Die neusten Stories', stories_path, class: "big-link" %></h2>
     <div class="row">

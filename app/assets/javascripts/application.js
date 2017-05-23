@@ -19,6 +19,7 @@
 //= require cookies_eu
 
 
+
 document.addEventListener("turbolinks:load", function() {
   tinymce.remove();
   tinymce.init({

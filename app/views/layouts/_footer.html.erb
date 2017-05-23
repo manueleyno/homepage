@@ -1,104 +1,93 @@
   <footer>
     <div class="container">
 			<div class="footer_all">
-				<div class="col-md-4">
-				  <%=image_tag("logo/logo.gif", size: "150x38", alt: "Example Image", class: "footer_logo")%>
+				<div class="row col-md-4">
+				  <%=image_tag("logo/logo_inverted.gif", size: "150x38", alt: "Example Image", class: "footer_logo")%>
 				  
  					<div class="footer_under_logo">
    					<p>Wir haben das Ziel dich mit unseren Produkten und Stories beim Sport zu unterstützen. So fällt dir der Sport leichter und du hast noch mehr Spaß am Sport. <br><br>
    					<strong>Topside</strong> - <strong>enjoy your sport.</strong></p>
  					</div>
  					
- 					<div class="impressum_footer">
- 					  <%= link_to "Impressum", impressum_path %><br>
- 					</div>
- 					
-					<address>
-						<strong>Adresse:</strong><br>
-						Kupferstraße 25<br>
-						70565 Stuttgart<br>
-					</address>
-						<abbr title="Telefon"><strong>Telefon:</strong></abbr> +49 <br>
-						<abbr title="Email:"><strong>Email:</strong></abbr> info@topside-sport.de <br>
-
-					<div class="unten_login">
-
-          </div>
+					<div class="admin-bereich">
+						<% if author_signed_in? %>
+			        <li class="nav-item dropdown author-nav">
+			          <a class="nav-link dropdown-toggle <%= yield(:author) %>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			            <%= image_tag(current_author.gravatar_image_url) %>
+			            <%= current_author.display_name %>
+			          </a>
+			          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+			            <%= link_to 'My posts', authors_posts_path, class: "dropdown-item" %>
+			            <%= link_to 'Account', authors_account_path, class: "dropdown-item" %>
+			            <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "dropdown-item" %>
+			          </div>
+			        </li>
+			      <% end %>
+				    
+				    <div class="btn btn-default navbar-btn standard-link">
+				      <%= link_to 'Admin Bereich', authors_posts_path, class: "nav-link #{yield(:author)}" %>
+				    </div>
+					</div>
+					
 				</div>
 			</div>
 
-					<div class="col-md-4 col_last">
-
-						<div class="footer_mid">
-							<h4>Instagramm Feed oder letzten Posts</h4>
-
-							<div id="post-list-footer">
-								<div class="spost clearfix">
-									<div class="entry-c">
-										<div class="entry-title">
-											<h4><a href="#">aes aseva aeses</a></h4>
-										</div>
-										<ul class="entry-meta">
-											<li>10th July 2014</li>
-										</ul>
-									</div>
-								</div>
-
-								<div class="spost clearfix">
-									<div class="entry-c">
-										<div class="entry-title">
-											<h4><a href="#">Elsfgfdhfgfh fh fdhfg dfghgfdh dfi</a></h4>
-										</div>
-										<ul class="entry-meta">
-											<li>10th July 2014</li>
-										</ul>
-									</div>
-								</div>
-
-								<div class="spost clearfix">
-									<div class="entry-c">
-										<div class="entry-title">
-											<h4><a href="#">eEDedsfgdf dsg dds df dfgzhsi</a></h4>
-										</div>
-										<ul class="entry-meta">
-											<li>10th July 2014</li>
-										</ul>
-									</div>
-								</div>
-								
-					      <% if author_signed_in? %>
-					        <li class="nav-item dropdown author-nav">
-					          <a class="nav-link dropdown-toggle <%= yield(:author) %>" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-					            <%= image_tag(current_author.gravatar_image_url) %>
-					            <%= current_author.display_name %>
-					          </a>
-					          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-					            <%= link_to 'My posts', authors_posts_path, class: "dropdown-item" %>
-					            <%= link_to 'Account', authors_account_path, class: "dropdown-item" %>
-					            <%= link_to 'Logout', destroy_author_session_path, method: :delete, class: "dropdown-item" %>
-					          </div>
-					        </li>
-					      <% end %>
-						    
-						    <div class="btn btn-default navbar-btn standard-link">
-						      <%= link_to 'Admin Bereich', authors_posts_path, class: "nav-link #{yield(:author)}" %>
-						    </div>
-						    
-							</div>
-						</div>
+			<div class="row col-md-4">
+				<div class="footer_mid">
+					
+					<div class="mid-fooder-links">
+						<h4>Topside auf amazon</h4>
+						<h4><a href="#">aes aseva aeses</a></h4>
 					</div>
-					<div class="col-md-4">
-						<div class="fb_footer">
-              <div class="fb-page" data-href="https://www.facebook.com/Topside-2082532521973737/" 
-                data-tabs="timeline" data-width="250" data-height="350" data-small-header="true" 
-                data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                  <blockquote cite="https://www.facebook.com/Topside-2082532521973737/" class="fb-xfbml-parse-ignore">
-                    <a href="https://www.facebook.com/Topside-2082532521973737/">Topside</a>
-                  </blockquote>
-                </div>
-						</div>
+					<div class="mid-fooder-links">
+						<h4>Nützliche Listen</h4>
+						<h4><a href="#">aes aseva aeses</a></h4>
 					</div>
-				</div><!-- .footer-widgets-wrap end -->
+					<div class="mid-fooder-links">
+						<h4>Werde Topside Partner</h4>
+						<h4><a href="#">aes aseva aeses</a></h4>
+					</div>
+					<div class="mid-fooder-links">
+						<h4>Du bist Topside Fan - wir freuen uns und unterstützen dich dabei gerne!</h4>
+						<h4><a href="#">aes aseva aeses</a></h4>
+					</div>
+
+				</div>
+			</div>
+			
+			<div class="row col-md-4 center">
+		 		<div class="footer-small-right">
+	 			  <%= link_to "Impressum", impressum_path %><br>
+	 			</div>
+	 			
+	 			<div class="footer-small-right">
+	 			  <%= link_to "Datenschutzbestimmung", cookies_path %><br>
+	 			</div>
+	 			
+	 			<div class="footer-small-right">
+	 			  <a href="https://www.instagram.com/p/RTTaxToOwN/">Folge uns auf Instgram</a><br>
+	 			</div>
+	 			
+	 			<div class="footer-small-right">
+					<h4>Folge uns auf Facebook</h4>
+					<div class="fb-like" data-href="https://www.facebook.com/Topside-2082532521973737/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+				</div>
+				
+				<div class="row col-md-4">
+					<address>
+						<p><strong>Adresse:</strong><br><br>
+						<strong>Telefon:</strong><br>
+						<strong>Email:</strong>
+					
+					</address>
+				</div>
+				<div class="row col-md-8">
+					<p>
+						Kupferstraße 25,
+						70565 Stuttgart <br>
+						+49 711 91288697 <br>
+						info@topside-sport.de</p>
+				</div>
 			</div>
 		</div>
   </footer>

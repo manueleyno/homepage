@@ -1,20 +1,46 @@
 footer {
-    background-color:  $divider-color;
+    background-color:  rgba(37, 59, 86, 0.89);
     padding-top: 30px;
-}
-
-.fb_footer {
-    margin-bottom: 30px;
-}
-
-.footer_logo {
+    p, h1, h2, h3, h4, h5, h6, a, abbr {
+        color: white;
+    }
+    .row {
+        padding: 30 px;
+        margin: auto;
+    }
+    .footer_logo {
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 15px;
-}
-
-.footer_under_logo {
+    }
+    .footer_under_logo {
     text-align: center;
     margin-bottom: 25px;
+    }
+    img {
+      border-radius: 4px;
+    }
+    ul, li {
+         list-style-type: none;
+    }
+    .admin-bereich {
+        position: relative;
+        margin: auto;
+        padding: 20px;
+    }
+    .footer-small-right{
+        margin: auto;
+        text-align: center;
+    }
+    .mid-fooder-links {
+        h4 {
+            text-align: center;
+        }
+    }
+    .footer-small-right {
+        margin-bottom: 20px;
+    }
 }
+
+
