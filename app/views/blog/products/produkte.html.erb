@@ -1,75 +1,74 @@
-<div class="home-callout text-center container-fluid">
-  <h1>Produkte</h1>
-</div>
-<div class="home_welcome_text text-center">
-  <h2>Willkommen auf Topside.info</h2>
+<% provide(:page_title, 'Produkte') %>
+<% provide(:page_title2, 'Produkte') %>
+<% provide(:produkte_active, 'active') %>
+
+<div class="background-main text-xs-center">
+  <h3>Topside Sport Produkte</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, autem, cupiditate, quidem inventore vel labore earum esse blanditiis numquam molestiae eos nihil explicabo suscipit rem voluptatem fugit sunt ipsam mollitia.</p>
 </div>
 
-<div class="container home-grid">
-  <div class="mid-matrix">
-    <div class="text-center home-inner-grid">
-      <%= link_to sicherungsbrille_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
-        <%=image_tag("products/sicherungsbrille/glasses_main_lq.jpg", alt: "Bild konnte leider nicht geladen werden", class: "pic-products-main")%>
-      <% end %>
-      <%= link_to "Sicherungsbrille / Belay Glasses", sicherungsbrille_path, class: "product-link" %>
-    </div> 
-  </div>
-</div>
-
-<div class="container home-grid">
-  <div class="mid-matrix">
-    <div class="heading-matrix"> 
-      <div class="text-center">
-        <h3><%= link_to "Sicherungsbrille / Belay Glasses", sicherungsbrille_path, class: "home-grid-link" %></h3>
+<div class="prod-main">
+  <div class="white-prod">
+    <div class="container">
+      <div class="row col-md-4 pic-main-field">
+        <%= link_to root_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
+          <%= image_tag("main/white-glasses-main.jpg", alt: "Example Image", class: "pic-main-side") %>
+        <% end %>
       </div>
-    </div>
-    <div class="matrix-inner-stories"></div>
-      <div class="row">
-        <div class="col-md-6">
-          <div class="well inner-maxtrix-single">
-            <nav class="text-center home-inner-grid">
-              <%= link_to sicherungsbrille_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
-                <%=image_tag("products/sicherungsbrille/glasses_main_lq.jpg", alt: "Bild konnte leider nicht geladen werden", class: "pic-home-grid")%>
-              <% end %>
-            </nav>      
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="well inner-maxtrix-single">
-            <div class="text-center home-inner-grid">
-              <%= link_to sicherungsbrille_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
-                <%=image_tag("products/sicherungsbrille/glasses_main_lq.jpg", alt: "Bild konnte leider nicht geladen werden", class: "pic-home-grid")%>
-              <% end %>
-            </div>      
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="well inner-maxtrix-single">
-            <div class="text-center home-inner-grid">
-              <%= link_to sicherungsbrille_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
-                <%=image_tag("products/sicherungsbrille/glasses_main_lq.jpg", alt: "Bild konnte leider nicht geladen werden", class: "pic-home-grid")%>
-              <% end %>
-            </div>      
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="well inner-maxtrix-single">
-            <%= link_to "Sicherungsbrille / Belay Glasses", sicherungsbrille_path, class: "home-grid-link" %>
-          </div>
+      <div class="row col-md-8 prod-main-field">
+        <div class="block-heading">
+    			<h3>Topside Sicherungsbrille / Belay Glasses</h3>
+    		</div>
+        <div class="block-text">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
+      
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
         </div>
       </div>
     </div>
   </div>
-</div>
-
-<div class="container home-grid">
-  <div class="mid-matrix">
-    <div class="text-center home-inner-grid">
-      <%= link_to "https://www.amazon.de/4mate-Premium-Bombilla-Extra-LANG/dp/B01MRUL0F1/ref=sr_1_2?ie=UTF8&qid=1493112741&sr=8-2&keywords=bombilla" do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
-        <%=image_tag("products/sicherungsbrille/glasses_main_lq.jpg", alt: "Bild konnte leider nicht geladen werden", class: "pic-products-main")%>
-      <% end %>
-      <a href="https://www.amazon.de/4mate-Premium-Bombilla-Extra-LANG/dp/B01MRUL0F1/ref=sr_1_2?ie=UTF8&qid=1493112741&sr=8-2&keywords=bombilla" class="product-link" target="_blank">Brillenetui für Sportbrillen, Sonnenbrillen und optische Brillen</a>
-    </div> 
+  
+  <div class="blue-prod">
+    <div class="container">
+  
+      <div class="col-md-8 prod-main-field">
+        <div class="block-heading">
+    			<h3>Brillen Etui für Sonnenbrillen und Sportbrillen: Schwarz</h3>
+    		</div>
+        <div class="block-text">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
+      
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-4 prod-main-field">
+        <%= link_to root_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
+          <%=image_tag("main/grey-glasses-main.jpg", alt: "Example Image", class: "pic-main-side")%>
+        <% end %>
+      </div>
+      
+    </div>
   </div>
+  
+  <div class="white-prod">
+    <div class="container">
+      <div class="row col-md-4 pic-main-field">
+        <%= link_to root_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
+          <%= image_tag("main/white-glasses-main.jpg", alt: "Example Image", class: "pic-main-side") %>
+        <% end %>
+      </div>
+      <div class="row col-md-8 prod-main-field">
+        <div class="block-heading">
+    			<h3>Brillen Etui für Sonnenbrillen und Sportbrillen: Blau</h3>
+    		</div>
+        <div class="block-text">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
+      
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </div>

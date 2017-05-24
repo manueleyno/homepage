@@ -1,4 +1,5 @@
 <% provide(:page_title, "Edit #{@post.title}") %>
+<% provide(:page_title2, "Edit #{@post.title}") %>
 <% provide(:author, 'active') %>
 
 <%= render 'form', post: @post, url: authors_post_url(@post) %>

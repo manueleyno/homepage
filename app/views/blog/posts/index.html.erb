@@ -1,9 +1,17 @@
-<% provide(:page_title, 'All Posts') %>
-<% provide(:blog_active, 'active') %>
+<% provide(:page_title, 'Stories') %>
+<% if params[:tag].blank?
+  provide(:page_title2, 'Alle Stories')
+  else
+  provide(:page_title2, params[:tag]) 
+  end %>
+<% provide(:stories_active, 'active') %>
 
-<div class="row">
-  <%= render @posts %>
-</div>
-<div class="apple_pagination">
-  <%= will_paginate @posts, container: false %>
+<div class="main-boxes">
+  <div class="row">
+    <%= render @posts %>
+  </div>
+  
+  <!--<div class="apple_pagination">-->
+  <!--  <%= will_paginate @posts, container: false %>-->
+  <!--</div>-->
 </div>

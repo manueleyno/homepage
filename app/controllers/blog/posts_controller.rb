@@ -11,11 +11,13 @@ module Blog
     def home
       @posts = storage.list_for(params[:page], params[:tag])
     end
+    
 
     # GET /posts/1
     # GET /posts/1.json
     def show
       @post = storage.friendly.find(params[:id])
+      @posts = storage.list_for(params[:page], params[:tag])
     end
 
     private

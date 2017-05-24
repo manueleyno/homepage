@@ -2,6 +2,7 @@
  @import 'bootstrap';
  @import 'font-awesome-sprockets';
  @import 'font-awesome';
+ @import "cookies_eu";
  @import "util";
  @import "colors";
  @import "base";
@@ -11,8 +12,7 @@
  @import "contacts";
  @import "navbar";
  @import "footer";
- 
-// *= require cookies_eu
+
 
  
 .card {

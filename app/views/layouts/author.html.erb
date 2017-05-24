@@ -42,10 +42,12 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
     
+    
     <%= render 'layouts/navbar' %>
     
+    
     <div class="home-callout">
-      <h1><%= yield(:page_title) %></h1>
+      <h1><%= yield(:page_title2) %></h1>
     </div>
     
     <div class="center-homepage">
@@ -67,7 +69,6 @@
       </div>
     </div>
     
-    <%= render 'cookies_eu/consent_banner', link: cookies_path, target: '_blank' %>
     
     <%= render 'layouts/footer' %>
     

@@ -1,5 +1,6 @@
-<% provide(:page_title, @post.title) %>
-<% provide(:author, 'active') %>
+<% provide(:page_title, 'Story-Time') %>
+<% provide(:page_title2, @post.tags.map { |t| link_to t.name, posts_path(tag: t.name), class:"title-link" }[0]) %>
+<% provide(:stories_active, 'active') %>
 
 <div>
   <%= link_to 'Edit', edit_authors_post_path(@post), class: 'btn btn-sm btn-warning' %>
@@ -7,9 +8,38 @@
 </div>
 
 <div class="row">
-  <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2 text-xs-center">
-    <h1><%= @post.title %></h1>
-    <p><%= @post.display_day_published %></p>
-    <%= @post.body.html_safe %>
+  
+  <div class="col-md-2 col-lg-3">
+    <p class='tags'><%= @post.tags.map { |t| link_to t.name, posts_path(tag: t.name) }[0] %></p>
   </div>
+  
+  <div class="container col-md-8 col-lg-6">
+    <div class"post-show">
+      
+      <div class="header-post-show text-xs-center" style='background-image: url(<%= @post.banner_image_url %>);'>
+        <h1><%= @post.title %></h1>
+        <h6><%= @post.display_day_published %></h6>
+      </div>
+      
+      <div class="tags-show text-xs-center">
+        <p class='tags'><%= raw @post.tags.map { |t| link_to t.name, posts_path(tag: t.name) }.join(', ') %></p>
+      </div>
+      
+      <div class="post-body">
+        <%= @post.body.html_safe %>
+      </div>
+      
+      <div class="author-bio text-xs-center">
+        <%= image_tag(@post.author.gravatar_image_url) %>
+        <h4><%= @post.author.name %></h4>
+        <h6 class='bio'><%= @post.author.bio %></h6>
+      </div>
+      
+    </div>
+  </div>
+  
+  <div class="col-md-2 col-lg-3">
+    <p class='tags'><%= @post.tags.map { |t| link_to t.name, posts_path(tag: t.name) }[1] %></p>
+  </div>
+  
 </div>

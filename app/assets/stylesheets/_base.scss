@@ -5,11 +5,18 @@
     background: linear-gradient(to left, #45a247 , #283c86); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     padding: 70px;
     padding-top: 50px !important;
-    h1 {
+    h1, .title-link {
       margin-top: 50px;
       text-align: center;
       color:white;
+      :hover {
+        opacity: 0.75;
+      }
     }
+}
+
+.row {
+      margin-right: 0px;
 }
 
 .center-homepage, body {

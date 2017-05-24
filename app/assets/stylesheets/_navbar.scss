@@ -9,6 +9,12 @@
     z-index: 99;
     width: 100%;
     height: 65px;
+    .logo2 {
+        -webkit-filter: brightness(100%);
+    }
+    .logo2:hover {
+        -webkit-filter: brightness(0%);
+    }
     .navbar-brand {
         font-weight: bolder;
         color: $accent-color;

@@ -33,7 +33,6 @@
     // -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     // box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.05);
     margin-top: 30px;
-    
 }
 
 .main-boxes-top {
@@ -53,9 +52,6 @@ FB INSTAGRAM PART
 	.container {
 		float: inherit;
 		margin: auto;
-		.row {
-		    width: 50%;
-		}
 		.fb, .instagram {
             margin: auto;
 		}
@@ -92,28 +88,70 @@ Produkte Part   HIER BEI  line-height: 235px; weiter
 
 .prod-main {
 	.white-prod, .blue-prod {
-		padding: 20px;
+		padding: 10px;
 		.container {
-			margin-top: 30px;
-		}
-		.pic-main-field {
-		   
-		}
-		.pic-main-side {
-			width: 100%;
 			margin: auto;
-			padding: 10px;
-			line-height: 235px;
+			margin-top: 40px;
+			margin-bottom: 30px;
+    		width: 100%;
+    		.row {
+    		    height: 100%;
+    		    margin-top: 0px;
+    		}
+    		.pic-main-side {
+    			width: 120%;
+                padding-top: 15px;
+    		}
+    		.block-heading {
+    		    
+    		}
+    		.block-text {
+    		    margin-top: 50px;
+    		}
 		}
 	}
 	.white-prod {
 		background-color: white;
+		.pic-main-field {
+		    padding-right:25px;
+		}
+		.prod-main-field {
+		    padding-left: 40px;
+            h3:after {
+                content: '';
+                display: block;
+                margin-top: 30px;
+                width: 40px;
+                border-top: 2px solid #444;
+                position: absolute;
+                left: 15px;
+                margin-left: 70px;
+            }
+	    }
+	    p, h3 {
+	        margin-left: 45px;
+	    }
+	}
+	.blue-prod {
+	    background-color: $light-gray;
+	    .pic-main-field {
+		    padding-left:70px;
+		}
+	    .prod-main-field {
+	        text-align: right;
+            h3:after {
+                content: '';
+                display: block;
+                margin-top: 30px;
+                width: 40px;
+                border-top: 2px solid #444;
+                position: absolute;
+                right: 15px;
+            }
+	    }
 	}
 }
 
-.prod-main-field {
-    		padding: 30px;
-}
 
 /* ------
 Untere Matrix
@@ -122,6 +160,7 @@ Untere Matrix
 .mid-matrix {
     position: relative;
     size: relative;
+    margin-top: 70px;
     padding-right: 15px;
     padding-left: 15px;
     padding-top: 5px;

@@ -1,20 +1,5 @@
 NEUE DB rails db:drop db:create db:migrate
 
-Devise Registrieren
-
-Benutzer können Artikel posten
-
--Eingeloggter User postet Artikel 
-    -Überschrift
-    -Upload für Mini Titelbild 
-        Felder:
-        ID, Datum, Link Story, Link zu Titelbild, Ersteller, Seitenaufrufe
-          create_table "articles", force: :cascade do |t|
-            t.string   "title"
-            t.text     "body"
-            t.datetime "created_at", null: false
-            t.datetime "updated_at", null: false
-            t.integer  "user_id"
         
 -Übersicht der Artikel
     -Edit, Publizieren, Delete Button
@@ -31,17 +16,17 @@ Benutzer können Artikel posten
         
  User und Admin können Artikel editieren
 
-Cancancan
-- 3 Verschiedene Rechte: Admin, Schreibrechte, Keine Rechte
+
 
 Sichere Seite
 
 Cookie Speicherung Erlaubnis
 
-Profile
-- User Braucht: Vorname, Name, Bild, Youtube Link, Facebook, Instagramm, Twitter 
-
 Suchfunktion
+
+
+Anzeigen post tag(new)
+
 
 
 

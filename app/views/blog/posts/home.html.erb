@@ -1,4 +1,5 @@
 <% provide(:page_title, 'enjoy your sports') %>
+<% provide(:page_title2, 'enjoy your sports') %>
 <% provide(:home_active, 'active') %>
 
 <div class="main-boxes"> <!-- wenn medium only 3 einstellen verweist auf _@post.html.erb -->
@@ -35,21 +36,21 @@
 <div class="prod-main">
   <div class="white-prod">
     <div class="container">
-      <div class="col-md-4 prod-main-field">
+      <div class="row col-md-4 pic-main-field">
         <%= link_to root_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
-          <%= image_tag("products/sicherungsbrille/glasses_main_lq.jpg", alt: "Example Image", class: "pic-main-side") %>
+          <%= image_tag("main/white-glasses-main.jpg", alt: "Example Image", class: "pic-main-side") %>
         <% end %>
       </div>
-      <div class="col-md-8 prod-main-field">
-        <div class="block-wide">
-    			<h3>Innovatives Sportprodukt des Monats: XXX XXX XXX</h3>
+      <div class="row col-md-8 prod-main-field">
+        <div class="block-heading">
+    			<h3>Topside Sicherungsbrille / Belay Glasses</h3>
     		</div>
-    
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
-    
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
-      </div>
+        <div class="block-text">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
       
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
+        </div>
+      </div>
     </div>
   </div>
   
@@ -57,18 +58,19 @@
     <div class="container">
   
       <div class="col-md-8 prod-main-field">
-        <div class="block-wide">
-    			<h3>Topside kletterbrille</h3>
+        <div class="block-heading">
+    			<h3>Innovatives Sportprodukt des Monats: XXX XXX XXX</h3>
     		</div>
-    
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
-    
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
+        <div class="block-text">
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero quod consequuntur quibusdam, enim expedita sed quia nesciunt incidunt accusamus necessitatibus modi adipisci officia libero accusantium esse hic, obcaecati, ullam, laboriosam!</p>
+      
+      		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti vero, animi suscipit id facere officia. Aspernatur, quo, quos nisi dolorum aperiam fugiat deserunt velit rerum laudantium cum magnam.</p>
+        </div>
       </div>
       
       <div class="col-md-4 prod-main-field">
         <%= link_to root_path do %> <!-- ACHTUNG ENHÄLT 2 LINKS -->
-          <%=image_tag("products/sicherungsbrille/glasses_main_lq.jpg", alt: "Example Image", class: "pic-main-side")%>
+          <%=image_tag("main/grey-glasses-main.jpg", alt: "Example Image", class: "pic-main-side")%>
         <% end %>
       </div>
       
