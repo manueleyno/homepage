@@ -17,7 +17,7 @@ module Blog
     # GET /posts/1.json
     def show
       @post = storage.friendly.find(params[:id])
-      @posts = storage.list_for(params[:page], params[:tag])
+      @similar = storage.similar_post(@post.tag_list[0])
     end
 
     private

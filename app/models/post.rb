@@ -36,6 +36,10 @@ class Post < ApplicationRecord
     recent_paginated(page).with_tag(tag)
   end
   
+  scope :similar_post, -> (tag) do
+    with_tag(tag)
+  end
+  
   def should_generate_new_friendly_id?
     title_changed?
   end
