@@ -26,12 +26,29 @@
 }
 
 .posts.show {
-  .show-left {
-    padding: 20px;
+  .row {
+    .sw {
+      padding-right: 0px !important;
+    }
+    .ls {
+      margin-left: 20px !important;
+    }
+  }
+  .show-right, .container {
+    margin-left: -15px;
+    margin-right: 20px;
+    h4 {
+      margin-top: 10px;
+      color: $accent-color;
+      text-align: center;
+      margin-bottom: 7px;
+    }
   }
   .container {
     background-color: $light-gray;
     border-radius: 6px;
+    padding: 20px;
+    padding-top: 10px;
     .header-post-show {
       height: 350px;
       border-radius: 6px;
@@ -57,30 +74,27 @@
     .post-body {
       margin-top: 30px;
     }
-    .author-bio {
-      background-color: $primary-color-light;
-      padding: 15px 45px;
-      margin: 30px 0;
-      border-radius: 4px;
-      img {
-        border-radius: 50%;
-      }
-      img, h4 {
-        margin-bottom: 10px;
-      }
-      h4 {
-        font-weight: bold;
-        font-size: 22px;
-      }
-      h6 {
-        font-weight: 300;
-        font-size: 16px
-      }
-      .header-post-show {
-        h1, h6 {
-          text-align: center;
-          margin-top: 20px;
-          margin-bottom: 20px;
+    .btm-show {
+      .container {
+        background-color: $primary-color-light;
+        border-radius: 4px;
+        margin: auto;
+        .author-bio {
+          img {
+            border-radius: 50%;
+            margin-top: -25px;
+          }
+          img, h4 {
+            margin-bottom: 10px;
+          }
+          h4 {
+            font-weight: bold;
+            font-size: 22px;
+          }
+          h6 {
+            font-weight: 300;
+            font-size: 16px
+          }
         }
       }
     }

@@ -18,6 +18,8 @@ module Blog
     def show
       @post = storage.friendly.find(params[:id])
       @similar = storage.similar_post(@post.tag_list[0])
+      @url = request.path.start_with?('/posts')
+      @posts = storage.list_for(params[:page], params[:tag])
     end
 
     private
@@ -25,7 +27,9 @@ module Blog
     def storage
       Post.published
     end
+    
 
+    
   end
 
 end

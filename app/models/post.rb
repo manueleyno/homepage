@@ -59,5 +59,9 @@ class Post < ApplicationRecord
   def unpublish
     update(published: false, published_at: nil)
   end
+  
+  def url
+    request.path_info
+  end
 
 end

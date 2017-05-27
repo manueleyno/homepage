@@ -9,37 +9,50 @@
 
 <div class="row">
   
-  <div class="col-md-2 col-lg-3">
-    <p class='tags'><%= @post.tags.map { |t| link_to t.name, posts_path(tag: t.name) }[0] %></p>
-  </div>
+  <div class="sw col-md-9 col-lg-9">
+    <div class="container ls">
+      <div class"post-show">
+      
+        <div class="header-post-show text-xs-center" style='background-image: url(<%= @post.banner_image_url %>);'>
+          <h1><%= @post.title %></h1>
+        </div>
+        
+        <div class="tags-show text-xs-center">
+          <p class='tags'><%= raw @post.tags.map { |t| link_to t.name, posts_path(tag: t.name) }.join(', ') %></p>
+          <h6><%= @post.display_day_published %></h6>
+        </div>
   
-  <div class="container col-md-8 col-lg-6">
-    <div class"post-show">
-      
-      <div class="header-post-show text-xs-center" style='background-image: url(<%= @post.banner_image_url %>);'>
-        <h1><%= @post.title %></h1>
-        <h6><%= @post.display_day_published %></h6>
+        <div class="post-body">
+          <%= @post.body.html_safe %>
+        </div>
+        
+        <div class="btm-show">
+          <div class="container">
+          <div class="row author-bio col-md-6 col-lg-6 text-xs-center">
+            <%= image_tag(@post.author.gravatar_image_url) %>
+            <h4><%= @post.author.name %></h4>
+            <h6 class='bio'><%= @post.author.bio %></h6>
+          </div>
+          <div class="row col-md-6 col-lg-6 text-xs-center">
+              <h4>Story auf Facebook </h4>
+              <a type="button" style="color: white;" class="btn btn-primary" 
+              href="" onclick="window.open('http://www.facebook.com/share.php?u=' + 
+              encodeURIComponent(location.href))">teilen</a>
+          </div>
+          </div>
+        </div>
+        
       </div>
-      
-      <div class="tags-show text-xs-center">
-        <p class='tags'><%= raw @post.tags.map { |t| link_to t.name, posts_path(tag: t.name) }.join(', ') %></p>
-      </div>
-      
-      <div class="post-body">
-        <%= @post.body.html_safe %>
-      </div>
-      
-      <div class="author-bio text-xs-center">
-        <%= image_tag(@post.author.gravatar_image_url) %>
-        <h4><%= @post.author.name %></h4>
-        <h6 class='bio'><%= @post.author.bio %></h6>
-      </div>
-      
     </div>
   </div>
   
-  <div class="col-md-2 col-lg-3">
-    <p class='tags'><%= @post.tags.map { |t| link_to t.name, posts_path(tag: t.name) }[1] %></p>
+  <div class="sw col-md-3 col-lg-3">
+    <div class="show-right container">
+      <div class="beliebt">
+        <h4>Auch beliebt:</h4>
+
+      </div>
+    </div>
   </div>
   
 </div>
