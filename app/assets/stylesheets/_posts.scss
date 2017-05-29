@@ -43,6 +43,23 @@
       text-align: center;
       margin-bottom: 7px;
     }
+    .beliebt {
+      .nav-show {
+        h4 {
+          margin-bottom: 5px;
+        }
+        .row {
+          margin-top: 0px !important;
+        }
+        .btn, .btn-info {
+            margin-left: 15px !important;
+            margin-bottom: 15px !important;
+        }
+      }
+     .u-nav-show {
+       margin-top: 25px !important;
+     }
+    }
   }
   .container {
     background-color: $light-gray;
@@ -59,7 +76,7 @@
         width: 100%;
       }
       h1 {
-        color: $accent-color;
+        color: white;
         position: relative;
         top: 50%;
         transform: translateY(-50%);

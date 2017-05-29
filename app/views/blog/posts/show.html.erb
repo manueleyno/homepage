@@ -44,12 +44,23 @@
   <div class="sw col-md-3 col-lg-3">
     <div class="show-right container">
       <div class="beliebt">
-        <h4>Auch beliebt:</h4>
-        <% if @similar.first(1).count.to_i >= 1 %>
-          <%= render @similar.first(3) %>
-        <% else %>
-          <%= render @posts.second %>
-        <% end %>
+        <div class="nav-show">
+          <h4>Navigation:</h4>
+          <div class="row col-md-12 col-lg-5 col-sm-12 text-xs-center">
+            <FORM><INPUT Type="button" VALUE="Zurück" class="btn btn-info" onClick="history.go(-1);return true;"></FORM>
+          </div>
+          <div class="row col-md-12 col-lg-7 col-sm-12 text-xs-center">
+            <%= link_to "Übersicht Stories", stories_path, class: "btn btn-success" %>
+          </div>
+        </div>
+        <div class="u-nav-show">
+          <h4>Stories in der gleichen Kategorie:</h4>
+          <% if @similar.first(1).count.to_i >= 1 %>
+            <%= render @similar.first(3) %>
+          <% else %>
+            <%= render @posts.second %>
+          <% end %>
+        </div>
       </div>
     </div>
   </div>
