@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170510092207) do
+ActiveRecord::Schema.define(version: 20170602182018) do
 
   create_table "authors", force: :cascade do |t|
     t.string   "name"
@@ -57,11 +57,11 @@ ActiveRecord::Schema.define(version: 20170510092207) do
     t.text     "body"
     t.text     "description"
     t.string   "slug"
-    t.datetime "created_at",                       null: false
-    t.datetime "updated_at",                       null: false
-    t.string   "banner_image_url"
+    t.datetime "created_at",                   null: false
+    t.datetime "updated_at",                   null: false
+    t.string   "cover"
     t.integer  "author_id"
-    t.boolean  "published",        default: false
+    t.boolean  "published",    default: false
     t.datetime "published_at"
     t.index ["author_id"], name: "index_posts_on_author_id"
     t.index ["slug"], name: "index_posts_on_slug", unique: true

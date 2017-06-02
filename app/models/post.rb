@@ -21,9 +21,9 @@ class Post < ApplicationRecord
   extend FriendlyId
   friendly_id :title, use: :slugged
   
+  mount_uploader :cover, CoverUploader
   
   belongs_to :author
-  
   
   PER_PAGE = 8
   

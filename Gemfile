@@ -20,6 +20,9 @@ gem 'jbuilder', '2.5.0'
 # # Use Twitter Bootstrap library for front-end UI and layout
 # gem 'bootstrap-sass', '3.3.7'
 gem 'bootstrap', '4.0.0.alpha3'
+# Carrierwave fuer Imageuploading
+gem 'carrierwave', '~> 1.0'
+
 
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
@@ -35,6 +38,8 @@ gem 'hirb', '0.7.3'
 gem 'cookies_eu', '1.6.2'
 # Use Devise for user authentication
 gem 'devise', '4.2.0'
+# Minimagick for image resize
+gem "mini_magick" , '4.7.0'
 # Use Cancancan for User authorization
 gem 'cancancan', '~> 1.10'
 # Userfreundliche URLS
